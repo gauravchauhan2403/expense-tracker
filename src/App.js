@@ -3,7 +3,7 @@ import Header from './Components/Header';
 import Balance from './Components/Balance';
 import IncomeExpenses from './Components/IncomeExpenses';
 import TransactionList from './Components/TransactionList';
-import AddTransactions from './Components/AddTransactions';
+import AddTransaction from './Components/AddTransaction';
 
 import { GlobalProvider } from './context/GlobalState';
 
@@ -15,7 +15,7 @@ function App() {
        <Balance />
        <IncomeExpenses />
        <TransactionList />
-       <AddTransactions />
+       <AddTransaction />
      </div>
     </GlobalProvider>
   );

@@ -1,12 +1,12 @@
 export default (state, action) => {
   switch(action.type) {
-    case 'DELETE_TRANSACION':
+    case 'DELETE_TRANSACTION':
       return {
         ...state,
         transactions: state.transactions.filter(transaction => 
           transaction.id !== action.payload )
       }
-      case 'ADD_TRANSACION':
+      case 'ADD_TRANSACTION':
       return {
         ...state,
         transactions: [action.payload, ...state.transactions]
@@ -14,4 +14,4 @@ export default (state, action) => {
     default:
       return state;
   }
-}
+} 
